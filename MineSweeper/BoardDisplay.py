@@ -9,11 +9,13 @@ def display_full_board(board):
 
 def display_partial_board(board):
     for row in range(len(board)):
+
         for tile in range(len(board)):
+
             if board_display_status[row][tile]:
-                print(board[row][tile], end=" ")
+                print(board[row][tile], end="")
             else:
-                print("[ ]", end=" ")
+                print("[ ]", end="")
         print("\n")
 
 
